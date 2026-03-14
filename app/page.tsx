@@ -21,9 +21,6 @@ export default function Home() {
             <a href="#quote" className="text-sm font-medium hover:text-sky-700">
               Request Quote
             </a>
-            {/* <a href="#booking" className="text-sm font-medium hover:text-sky-700">
-              Book a Visit
-            </a> */}
             <a href="#why-us" className="text-sm font-medium hover:text-sky-700">
               Why Choose Us
             </a>
@@ -57,12 +54,6 @@ export default function Home() {
               >
                 Request a Quote
               </a>
-              {/* <a
-                href="#booking"
-                className="inline-flex h-10 items-center justify-center rounded-md border border-sky-200 bg-white px-8 py-2 text-sm font-medium text-sky-700 shadow-sm transition-colors hover:bg-sky-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600"
-              >
-                Book a Visit
-              </a> */}
             </div>
           </div>
           <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
@@ -101,7 +92,7 @@ export default function Home() {
         {/* Quote Request Section */}
         <section id="quote" className="py-16 bg-sky-50">
           <div className="container">
-            <div className="mx-auto max-w-3xl rounded-xl bg-white p-6 shadow-lg md:p-8">
+            <div className="mx-auto max-w-3xl rounded-lg bg-white p-4 shadow-lg sm:p-6 md:p-8">
               <div className="mb-8 text-center">
                 <h2 className="text-2xl font-bold text-sky-800 sm:text-3xl">Request a Quote</h2>
                 <p className="mt-2 text-gray-600">
@@ -112,25 +103,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* <section id="booking" className="py-16 bg-white">
-          <div className="container">
-            <div className="mx-auto max-w-3xl">
-              <div className="mb-8 text-center">
-                <h2 className="text-2xl font-bold text-sky-800 sm:text-3xl">Book a Visit</h2>
-                <p className="mt-2 text-gray-600">Schedule a consultation to discuss your specific hygiene needs.</p>
-              </div>
-              <div className="rounded-xl border border-sky-100 p-4 shadow-sm">
-                
-                <div
-                  className="calendly-inline-widget"
-                  // data-url="https://calendly.com/your-calendly-link"
-                  style={{ minWidth: "320px", height: "630px" }}
-                ></div>
-              </div>
-            </div>
-          </div>
-        </section> */}
 
         {/* Why Choose Us Section */}
         <section id="why-us" className="py-16 bg-sky-50">
@@ -177,11 +149,11 @@ export default function Home() {
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-sky-600" />
-                  <span className="text-sm text-gray-600">(704) 236-5045</span>
+                  <a href="tel:+17042365045" className="text-sm text-gray-600 hover:text-sky-700">(704) 236-5045</a>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-sky-600" />
-                  <span className="text-sm text-gray-600">contact@getsemani-cleaning.com</span>
+                  <a href="mailto:gpolicarpo@getsemani.pro" className="text-sm text-gray-600 hover:text-sky-700">gpolicarpo@getsemani.pro</a>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4 text-sky-600" />
@@ -189,18 +161,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div className="h-64 overflow-hidden rounded-lg">
-             
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDI3JzQ0LjAiTiA5MMKwMTUnMzAuMCJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div> */}
           </div>
           <div className="mt-8 border-t pt-8 text-center">
             <p className="text-sm text-gray-500">© {new Date().getFullYear()} Getsemaní. All rights reserved.</p>

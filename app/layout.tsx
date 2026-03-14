@@ -1,10 +1,14 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+}
 
 export const metadata: Metadata = {
   title: {
@@ -26,11 +30,6 @@ export const metadata: Metadata = {
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
   robots: {
     index: true,
     follow: true,
@@ -45,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://getsemanicleaning.com",
+    url: "https://getsemani.pro",
     title: "Getsemani Cleaning Services",
     description: "Professional cleaning services for homes and businesses in the area. Quality, reliability, and attention to detail.",
     siteName: "Getsemani Cleaning",
@@ -62,9 +61,6 @@ export const metadata: Metadata = {
     description: "Professional cleaning services for homes and businesses in the area. Quality, reliability, and attention to detail.",
     images: ["/logo.png"],
   },
-  // verification: {
-  //   google: "google-site-verification-code", // Replace with your Google verification code
-  // },
   alternates: {
     canonical: "https://getsemani.pro",
   },
@@ -77,19 +73,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
- 
-        {/* <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> */}
-      </head>
+      <head />
       <body className={inter.className}>
-        
-          {children}
-       
+        {children}
       </body>
     </html>
   )
 }
-
-
-
-import './globals.css'
